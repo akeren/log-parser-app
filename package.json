@@ -1,0 +1,43 @@
+{
+  "name": "log-parser-app",
+  "version": "1.0.0",
+  "description": "A command line node.js application, which parses the input log file",
+  "main": "src/parser.ts",
+  "scripts": {
+    "dev": "nodemon --input ./app.log --output ./errors.json",
+    "build": "tsc -p tsconfig.prod.json",
+    "start": "node ./dist/src/parser.js --input ./app.log --output ./errors.json",
+    "lint": "eslint **/*.ts --ignore-pattern node_modules/",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "Parser",
+    "log",
+    "node.js",
+    "typescript"
+  ],
+  "author": "Kater Akeren",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^27.5.1",
+    "@types/node": "^17.0.36",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^28.1.0",
+    "nodemon": "^2.0.16",
+    "prettier": "^2.6.2",
+    "ts-jest": "^28.0.3",
+    "ts-node": "^10.8.0",
+    "tsc-node": "^0.0.3",
+    "tsconfig-paths": "^4.0.0",
+    "typescript": "^4.7.2"
+  }
+}
