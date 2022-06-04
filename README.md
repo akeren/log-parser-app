@@ -5,6 +5,11 @@ A command line **node.js** application, which parses the input log file. This ap
 
 ## npm commands
 
+- Install project dependencies
+    ```shell
+        npm install
+    ```
+
 - start application in `development` mode
     ```shell
         npm run dev
